@@ -171,7 +171,7 @@ export const asyncRoutes = [
     ]
   },
 
-  {
+  /*{
     path: '/icon',
     component: Layout,
     children: [
@@ -182,7 +182,7 @@ export const asyncRoutes = [
         meta: { title: 'Icons', icon: 'icon', noCache: true }
       }
     ]
-  },
+  },*/
 
   /** when your routing map is too long, you can split it into small modules **/
   componentsRouter,
