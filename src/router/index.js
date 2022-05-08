@@ -83,7 +83,7 @@ export const constantRoutes = [
       }
     ]
   },
-  {
+  /* {
     path: '/documentation',
     component: Layout,
     children: [
@@ -94,7 +94,7 @@ export const constantRoutes = [
         meta: { title: 'Documentation', icon: 'documentation', affix: true }
       }
     ]
-  },
+  },*/
   {
     path: '/guide',
     component: Layout,
@@ -171,7 +171,7 @@ export const asyncRoutes = [
     ]
   },
 
-  /*{
+  /* {
     path: '/icon',
     component: Layout,
     children: [
@@ -185,12 +185,12 @@ export const asyncRoutes = [
   },*/
 
   /** when your routing map is too long, you can split it into small modules **/
-  componentsRouter,
+  /*  componentsRouter,*/
   chartsRouter,
-  nestedRouter,
-  tableRouter,
+  /* nestedRouter,*/
+  /* tableRouter,*/
 
-  {
+  /* {
     path: '/example',
     component: Layout,
     redirect: '/example/list',
@@ -220,9 +220,9 @@ export const asyncRoutes = [
         meta: { title: 'Article List', icon: 'list' }
       }
     ]
-  },
+  },*/
 
-  {
+  /* {
     path: '/tab',
     component: Layout,
     children: [
@@ -233,11 +233,12 @@ export const asyncRoutes = [
         meta: { title: 'Tab', icon: 'tab' }
       }
     ]
-  },
+  },*/
 
   {
     path: '/error',
     component: Layout,
+    hidden: true,
     redirect: 'noRedirect',
     name: 'ErrorPages',
     meta: {
@@ -260,7 +261,7 @@ export const asyncRoutes = [
     ]
   },
 
-  {
+  /* {
     path: '/error-log',
     component: Layout,
     children: [
@@ -271,7 +272,7 @@ export const asyncRoutes = [
         meta: { title: 'Error Log', icon: 'bug' }
       }
     ]
-  },
+  },*/
 
   {
     path: '/excel',
@@ -310,7 +311,7 @@ export const asyncRoutes = [
     ]
   },
 
-  {
+  /* {
     path: '/zip',
     component: Layout,
     redirect: '/zip/download',
@@ -339,14 +340,14 @@ export const asyncRoutes = [
         meta: { title: 'PDF', icon: 'pdf' }
       }
     ]
-  },
-  {
+  },*/
+  /*  {
     path: '/pdf/download',
     component: () => import('@/views/pdf/download'),
     hidden: true
-  },
+  },*/
 
-  {
+  /* {
     path: '/theme',
     component: Layout,
     children: [
@@ -357,9 +358,9 @@ export const asyncRoutes = [
         meta: { title: 'Theme', icon: 'theme' }
       }
     ]
-  },
+  },*/
 
-  {
+  /*  {
     path: '/clipboard',
     component: Layout,
     children: [
@@ -370,9 +371,9 @@ export const asyncRoutes = [
         meta: { title: 'Clipboard', icon: 'clipboard' }
       }
     ]
-  },
+  },*/
 
-  {
+  /* {
     path: 'external-link',
     component: Layout,
     children: [
@@ -381,7 +382,7 @@ export const asyncRoutes = [
         meta: { title: 'External Link', icon: 'link' }
       }
     ]
-  },
+  },*/
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
